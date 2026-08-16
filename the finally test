@@ -1,0 +1,735 @@
+```
+/* =========================================================
+   WOLVDEN DIVA THEME — FOREST / LEAF
+   Main colors:
+   #19382A — deep forest
+   #235F38 — forest green
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+
+/* -------------------------
+   CURSOR
+   ------------------------- */
+
+* {
+    cursor: url('https://cdn.cursors-4u.net/previews/unborn-8-0-grey-pointer-15926729-32.webp') 32 32, auto !important;
+}
+
+/* -------------------------
+   BODY / BACKGROUND
+   ------------------------- */
+
+body {
+    background-image: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003147.png") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+
+    font-family: 'Metamorphous', serif !important;
+    text-transform: lowercase;
+    font-size: 14px !important;
+
+    filter: none !important;
+
+    color: #19382A !important;
+}
+
+/* -------------------------
+   MAKE METAMORPHOUS THE
+   DEFAULT FONT EVERYWHERE
+   ------------------------- */
+
+html,
+body,
+button,
+input,
+select,
+textarea,
+.navbar-main,
+.navbar-status,
+.breadcrumb-nav,
+#main,
+#sidebar,
+.card,
+.card-header,
+.card-body,
+.table,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+.btn,
+.small,
+small,
+p {
+    font-family: 'Metamorphous', serif !important;
+}
+
+/* -------------------------
+   MAIN NAVBAR
+   ------------------------- */
+
+.navbar-main {
+    background-color: #19382A !important;
+    height: 2.5rem !important;
+    border-bottom: 2px solid #235F38 !important;
+}
+
+.mr-auto .nav-link {
+    color: #F1EBDD !important;
+    font-size: 25px !important;
+    font-family: 'Metamorphous', serif !important;
+    text-transform: lowercase !important;
+    margin-left: 8px;
+}
+
+.mr-auto .nav-link:hover,
+.navbar-status a,
+.breadcrumb-item a:hover {
+    color: #C8D9C6 !important;
+    background: none !important;
+    transition: 0.3s ease all !important;
+}
+
+/* Hide original icons */
+
+i.fa.fa-paw,
+i.fa.fa-globe-americas,
+i.fa.fa-drumstick-bite,
+i.fa.fa-comments,
+i.fa.fa-feather-alt,
+i.fa.fa-calendar-alt,
+i.fa.fa-gem,
+i.fa.fa-question-circle {
+    margin: -0.3rem !important;
+    opacity: 0 !important;
+}
+
+/* -------------------------
+   NAV STATUS
+   ------------------------- */
+
+.navbar-status {
+    background-color: #235F38 !important;
+}
+
+.breadcrumb-nav {
+    background-color: rgba(35, 95, 56, 0.94) !important;
+    border: 2px solid #19382A !important;
+    border-radius: 5rem;
+    margin: 6px;
+}
+
+.breadcrumb-item,
+.breadcrumb-item a,
+.navbar-text,
+.alert-info {
+    color: #F1EBDD !important;
+}
+
+.breadcrumb-item::before,
+i.text-muted,
+#sidebar h3,
+#sidebar h4,
+tr.pup {
+    color: #19382A !important;
+    font-size: 14px !important;
+}
+
+/* -------------------------
+   SIDEBAR
+   ------------------------- */
+
+#sidebar {
+    background-color: rgba(25, 56, 42, 0.35) !important;
+    border: 2px solid rgba(25, 56, 42, 0.75) !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+#sidebar .card {
+    background-color: rgba(244, 240, 231, 0.30) !important;
+    padding: 0 !important;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #19382A !important;
+    border-radius: 1rem !important;
+    border: 2px solid rgba(35, 95, 56, 0.75) !important;
+}
+
+#sidebar .small span {
+    color: #19382A !important;
+    font-size: 12px !important;
+    margin-bottom: 6px !important;
+    margin-top: 6px !important;
+}
+
+/* -------------------------
+   COLORED ALERTS / BOXES
+   ------------------------- */
+
+.bg-info {
+    background-color: #235F38 !important;
+    border: 2px solid #19382A !important;
+    border-radius: 5rem;
+    color: #F4F0E7 !important;
+}
+
+.bg-danger {
+    background-color: #D8E5D5 !important;
+    border: 2px solid #235F38 !important;
+    border-radius: 5rem;
+    color: #19382A !important;
+}
+
+.bg-primary {
+    background-color: #235F38 !important;
+    border: 2px solid #19382A !important;
+    border-radius: 5rem;
+    color: #F4F0E7 !important;
+}
+
+.bg-warning {
+    background-image: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    border: 2px solid #19382A !important;
+    border-radius: 5rem;
+    color: #19382A !important;
+}
+
+.bg-success {
+    background-color: #C8D9C6 !important;
+    border: 2px solid #235F38 !important;
+    border-radius: 5rem;
+    color: #19382A !important;
+}
+
+/* -------------------------
+   MAIN CONTENT
+   ------------------------- */
+
+#main {
+    background: rgba(244, 240, 231, 0.20) !important;
+    border: 2px solid rgba(35, 95, 56, 0.75) !important;
+    color: #19382A !important;
+    backdrop-filter: none !important;
+}
+
+#main .card {
+    border: 2px solid rgba(35, 95, 56, 0.75) !important;
+    background: rgba(244, 240, 231, 0.20) !important;
+    margin-bottom: 0.5rem;
+}
+
+/* -------------------------
+   ALERTS
+   ------------------------- */
+
+.alert {
+    border-radius: 5rem !important;
+    color: #19382A !important;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #19382A !important;
+    background-color: #C8D9C6 !important;
+    text-align: center !important;
+}
+
+.alert-danger {
+    border: 2px solid #235F38 !important;
+    background-color: #D8E5D5 !important;
+    color: #19382A !important;
+    text-align: center !important;
+}
+
+/* -------------------------
+   PROGRESS
+   ------------------------- */
+
+.progress {
+    color: transparent;
+    background-color: transparent !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* -------------------------
+   HEADINGS
+   ------------------------- */
+
+h1 {
+    color: #19382A !important;
+    font-size: 20px !important;
+    font-family: 'Metamorphous', serif !important;
+    margin-left: 1rem;
+}
+
+h3 a {
+    font-family: 'Metamorphous', serif !important;
+    font-size: 20px !important;
+    color: #235F38 !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* -------------------------
+   TABLES
+   ------------------------- */
+
+.border-none .striped,
+.border-none .striped tr {
+    background: transparent !important;
+    color: #19382A !important;
+}
+
+.table {
+    background-color: rgba(244, 240, 231, 0.20) !important;
+    color: #19382A !important;
+}
+
+.table th {
+    color: #F4F0E7 !important;
+    background-color: #19382A !important;
+    padding: 0.6rem 0.6rem 0.6rem 1rem !important;
+}
+
+.table th a,
+.navbar-status a:hover {
+    color: #D8E5D5 !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: transparent !important;
+}
+
+.table .left {
+    background-color: #D8E5D5 !important;
+    border-radius: 0 !important;
+}
+
+.table .bottom,
+.table tfoot td {
+    color: #19382A !important;
+    background-color: transparent;
+    border-radius: 0 0 10px 10px !important;
+    text-align: center;
+}
+
+.table thead th,
+tbody {
+    border: 1px solid transparent !important;
+}
+
+/* -------------------------
+   LINKS
+   ------------------------- */
+
+a,
+.s-chat-message__pinned,
+body.theme_dark,
+.text-td-bottom {
+    color: #235F38 !important;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #19382A !important;
+    transition: 0.3s ease all !important;
+    text-decoration: none !important;
+}
+
+/* -------------------------
+   TABS
+   ------------------------- */
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: #D8E5D5 !important;
+    border: 2px solid #235F38 !important;
+    color: #19382A !important;
+    border-radius: 0.5rem;
+}
+
+.nav-tabs .nav-link,
+.nav-tabs {
+    border: none !important;
+    color: #235F38 !important;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-tabs:hover .nav-link:hover {
+    color: #F4F0E7 !important;
+    background-color: #235F38 !important;
+    border-radius: 0.5rem;
+    border: 0.15rem solid #19382A !important;
+    transition: none !important;
+}
+
+/* -------------------------
+   BUTTONS
+   ------------------------- */
+
+.btn-success,
+button#submitBtn {
+    color: #F4F0E7 !important;
+    background-color: #235F38 !important;
+    border-color: #19382A !important;
+    font-family: 'Metamorphous', serif !important;
+    text-transform: lowercase;
+    border-radius: 5rem !important;
+}
+
+.btn-success:hover,
+button#submitBtn:hover {
+    filter: brightness(1.15) !important;
+    transition: filter 0.2s !important;
+    box-shadow: none !important;
+}
+
+.btn-danger,
+.btn-warning {
+    color: #F4F0E7 !important;
+    background-color: #235F38 !important;
+    border-color: #19382A !important;
+    text-transform: lowercase !important;
+}
+
+.btn-danger:hover,
+.btn-warning:hover {
+    filter: brightness(1.15) !important;
+    transition: filter 0.2s !important;
+    box-shadow: none !important;
+}
+
+.btn,
+.btn:hover {
+    border-radius: 5rem !important;
+    box-shadow: none !important;
+    border: 2px solid #19382A;
+}
+
+.btn-info {
+    color: #19382A !important;
+    background-color: #C8D9C6 !important;
+    border-color: #235F38 !important;
+    text-transform: lowercase !important;
+    border-radius: 5rem !important;
+}
+
+.btn-info:hover {
+    filter: brightness(0.95);
+    transition: filter 0.2s !important;
+}
+
+/* -------------------------
+   CARDS
+   ------------------------- */
+
+.card-header,
+#footer,
+#dencards {
+    background-color: rgba(216, 229, 213, 0.45) !important;
+    border: 2px solid rgba(35, 95, 56, 0.75) !important;
+    color: #19382A !important;
+    border-top-left-radius: 0 !important;
+    font-size: 14px !important;
+}
+
+.card-body {
+    background-color: rgba(244, 240, 231, 0.20) !important;
+    border-radius: 1rem !important;
+    font-size: 14px !important;
+    color: #19382A !important;
+}
+
+.card-body.pb-1 {
+    border-radius: 0 !important;
+    padding: 1rem;
+    margin-top: 0;
+    background-color: rgba(200, 217, 198, 0.35) !important;
+    outline: 2px solid rgba(35, 95, 56, 0.75) !important;
+}
+
+/* -------------------------
+   SPECIAL CARDS
+   ------------------------- */
+
+.bg-dark,
+.bg-light {
+    background-color: rgba(244, 240, 231, 0.20) !important;
+    border-color: rgba(35, 95, 56, 0.75) !important;
+    color: #19382A !important;
+}
+
+.order-lg-2 > .mb-3 .card-body {
+    border: 2px solid rgba(35, 95, 56, 0.75) !important;
+    background-color: rgba(231, 228, 217, 0.20) !important;
+}
+
+/* -------------------------
+   TEXT
+   ------------------------- */
+
+.m-0 {
+    font-size: 14px !important;
+    font-family: 'Metamorphous', serif !important;
+    margin-left: 3px !important;
+    color: #235F38 !important;
+}
+
+.m-0:hover {
+    background: transparent !important;
+    color: #19382A !important;
+    transition: color 0.2s !important;
+    box-shadow: none !important;
+}
+
+.small,
+small {
+    font-size: 12px !important;
+    color: #235F38 !important;
+    font-family: 'Metamorphous', serif !important;
+}
+
+p {
+    font-size: 12px !important;
+}
+
+/* -------------------------
+   FOOTER
+   ------------------------- */
+
+#footer a {
+    color: #235F38 !important;
+    padding-top: 5px !important;
+}
+
+/* -------------------------
+   IMAGES
+   ------------------------- */
+
+img {
+    max-width: 100% !important;
+    filter: none !important;
+}
+
+/* =========================================================
+   🌿 WOLVDEN SIX MAIN SECTIONS
+   ========================================================= */
+
+img[src$="packdynasty.png"],
+img[src$="nesting.png"],
+img[src$="packoverview.png"],
+img[src$="breeding.png"],
+img[src$="pupsitting.png"],
+img[src$="socializing.png"] {
+    content: url("https://file.garden/aVc3cFd4aiZ_dmP1/Screenshot%202026-08-14%20003553.png") !important;
+
+    width: 40% !important;
+    height: auto !important;
+
+    margin-left: 5rem !important;
+    margin-bottom: 2.5rem !important;
+
+    filter: none !important;
+
+    border-radius: 12px !important;
+    outline: 3px solid #19382A !important;
+}
+
+/* -------------------------
+   PACK LEADER
+   ------------------------- */
+
+span#lblPackLeaderTitle {
+    font-size: 0 !important;
+    margin-left: 2px;
+}
+
+span#lblPackLeaderTitle::after {
+    font-size: 17.5px !important;
+    font-family: 'Metamorphous', serif !important;
+    color: #235F38;
+    content: 'the iconic' !important;
+}
+
+/* -------------------------
+   CHAT
+   ------------------------- */
+
+.s-chat-message:nth-child(odd) {
+    background-color: #F4F0E7 !important;
+    color: #19382A !important;
+    text-transform: none !important;
+    font-size: 14px !important;
+}
+
+.s-chat-message:nth-child(even),
+.s-chat-message:nth-child(2n) {
+    background-color: #D8E5D5 !important;
+    color: #19382A !important;
+    text-transform: none !important;
+    font-size: 14px !important;
+}
+
+input#btnChatSend,
+button.btn-chat-connect.btn.btn-info {
+    background-color: #19382A !important;
+    border-color: #235F38 !important;
+    color: #F4F0E7 !important;
+    font-family: 'Metamorphous', serif !important;
+    text-transform: lowercase !important;
+}
+/* =========================================================
+   🍃 FALLING LEAVES
+   ========================================================= */
+
+.snowflakes {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none !important;
+    z-index: 999999 !important;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: fixed !important;
+    top: -10%;
+
+    color: #235F38 !important;
+    font-size: 28px;
+
+    user-select: none;
+    pointer-events: none;
+
+    animation-name: leaf-fall, leaf-sway;
+    animation-duration: 12s, 4s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* Different starting positions */
+
+.snowflake:nth-child(1) {
+    left: 5%;
+    animation-delay: 0s, 0s;
+    font-size: 24px;
+}
+
+.snowflake:nth-child(2) {
+    left: 15%;
+    animation-delay: 3s, 1s;
+    font-size: 32px;
+}
+
+.snowflake:nth-child(3) {
+    left: 25%;
+    animation-delay: 7s, 2s;
+    font-size: 20px;
+}
+
+.snowflake:nth-child(4) {
+    left: 35%;
+    animation-delay: 2s, 1s;
+    font-size: 30px;
+}
+
+.snowflake:nth-child(5) {
+    left: 45%;
+    animation-delay: 5s, 3s;
+    font-size: 22px;
+}
+
+.snowflake:nth-child(6) {
+    left: 55%;
+    animation-delay: 9s, 0s;
+    font-size: 34px;
+}
+
+.snowflake:nth-child(7) {
+    left: 65%;
+    animation-delay: 1s, 2s;
+    font-size: 25px;
+}
+
+.snowflake:nth-child(8) {
+    left: 75%;
+    animation-delay: 6s, 1s;
+    font-size: 30px;
+}
+
+.snowflake:nth-child(9) {
+    left: 85%;
+    animation-delay: 4s, 3s;
+    font-size: 21px;
+}
+
+.snowflake:nth-child(10) {
+    left: 95%;
+    animation-delay: 8s, 0s;
+    font-size: 28px;
+}
+
+
+/* Falling downward */
+
+@keyframes leaf-fall {
+    0% {
+        top: -10%;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 0.7;
+    }
+
+    100% {
+        top: 110%;
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Wind blowing sideways */
+
+@keyframes leaf-sway {
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: 80px;
+    }
+
+    50% {
+        margin-left: -60px;
+    }
+
+    75% {
+        margin-left: 100px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+```
