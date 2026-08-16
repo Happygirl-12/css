@@ -12,9 +12,11 @@
    CURSOR
    ------------------------- */
 
+/* Falling Leaf Bud Background - https://www.cursors-4u.com/cursor/falling-leaf-bud-background */
 * {
-    cursor: url('https://cdn.cursors-4u.net/previews/unborn-8-0-grey-pointer-15926729-32.webp') 32 32, auto !important;
+    cursor: url('https://cdn.cursors-4u.net/css-previews/falling-leaf-bud-background-49c9b0e4-css.webp') 4 24, auto !important;
 }
+/* End www.Cursors-4U.com Code */
 
 /* -------------------------
    BODY / BACKGROUND
